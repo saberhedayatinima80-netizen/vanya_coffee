@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قهوه وانیا | فروشگاه تخصصی قهوه</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+            function scrollCoffee(direction) {
+            const containers = document.querySelectorAll('.scroll-container');
+            containers.forEach(container => {
+            const scrollAmount = 300;
+            if (direction === 'left') {
+            container.scrollLeft += scrollAmount;
+        } else {
+            container.scrollLeft -= scrollAmount;
+        }
+        });
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        .horizontal-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .horizontal-scroll::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-gray-800 font-sans">
+
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-reverse space-x-3">
+            <i class="ri-cup-fill text-2xl text-amber-700"></i>
+            <h1 class="text-xl font-bold text-amber-900">قهوه وانیا</h1>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#beans" class="text-gray-700 hover:text-amber-700 transition">دانه قهوه</a>
+            <a href="#powder" class="text-gray-700 hover:text-amber-700 transition">پودر قهوه</a>
+            <a href="#pure" class="text-gray-700 hover:text-amber-700 transition">بدون ترکیب</a>
+        </nav>
+        <button class="md:hidden">
+            <i class="ri-menu-3-line text-xl"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="relative h-screen bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center overflow-hidden">
+    <div class="container mx-auto px-6 text-center z-10">
+        <h2 class="text-5xl md:text-6xl font-bold text-amber-900 mb-4">هر فنجان، یک داستان</h2>
+        <p class="text-lg md:text-xl text-amber-800 mb-8 max-w-2xl mx-auto">
+            قهوه‌ای تازه، ارگانیک و دست‌چین‌شده از بهترین مزارع جهان
+        </p>
+    </div>
+    <div class="absolute inset-0 opacity-20">
+        <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center"></div>
+    </div>
+</section>
+
+<section id="beans" class="py-16 bg-white">
+
+    <div class="container mx-auto px-6">
+        <h3 class="px-7 text-3xl font-bold text-amber-900 mb-8 text-right">قهوه دانه‌ای</h3>
+
+        <div  class="relative">
+            <div id="coffeeScroll" class="scroll-container overflow-x-auto horizontal-scroll flex gap-6 pb-4 px-1" style="scroll-behavior: smooth;">
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516640-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87-20%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---80%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/20-80%20-%20Copy.jpg" alt="قهوه عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cover"/>
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">دانه قهوه 20% عربیکا - 80% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516635-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87-80%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---20%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/80-20.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">دانه قهوه 80% عربیکا - 20% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516636-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87-70%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---30%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/70-30-2.jpg" alt="قهوه عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">دانه قهوه 70% عربیکا - 30% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516639-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87-30%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---70%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/30-70.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">دانه قهوه 30% عربیکا - 70% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516637-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87-60%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---40%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/60-40.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">دانه قهوه 60% عربیکا - 40% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516638-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87-50%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---50%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/50-50.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">دانه قهوه 50% عربیکا - 50% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <button onclick="scrollCoffee('right')"
+                    class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-amber-50 transition z-10">
+                <i class="ri-arrow-left-s-line text-2xl text-amber-700"></i>
+            </button>
+            <button onclick="scrollCoffee('left')"
+                    class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-amber-50 transition z-10">
+                <i class="ri-arrow-right-s-line text-2xl text-amber-700"></i>
+            </button>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="pure" class="py-10 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h3 class="px-7 text-3xl font-bold text-amber-900 mb-8 text-right">بدون ترکیب</h3>
+        <div class="relative overflow-x-auto horizontal-scroll flex gap-6 pb-4">
+
+            <div class="min-w-[260px] bg-white rounded-xl shadow-md overflow-hidden hover:scale-105">
+                <a href="https://jaliket.com/product/516632-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87--100-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                <img src="image/عربیکا-100.jpg" alt="عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cove">
+                <div class="p-4 text-right">
+                    <h4 class="font-bold text-amber-900">دانه قهوه 100 درصد عربیکا</h4>
+                </div>
+                </a>
+            </div>
+
+            <div class="min-w-[260px] bg-white rounded-xl shadow-md overflow-hidden hover:scale-105">
+                <a href="https://jaliket.com/product/516634-%D8%AF%D8%A7%D9%86%D9%87-%D9%82%D9%87%D9%88%D9%87-100-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                    <img src="image/روبوستا-100.jpg" alt="عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cove">
+                    <div class="p-4 text-right">
+                        <h4 class="font-bold text-amber-900">دانه قهوه 100 درصد روبوستا</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="min-w-[260px] bg-white rounded-xl shadow-md overflow-hidden hover:scale-105">
+                <a href="https://jaliket.com/product/516648-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-100%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                    <img src="image/عربیکا-100.jpg" alt="عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cove">
+                    <div class="p-4 text-right">
+                        <h4 class="font-bold text-amber-900">پودر قهوه 100 درصد عربیکا</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="min-w-[260px] bg-white rounded-xl shadow-md overflow-hidden hover:scale-105">
+                <a href="https://jaliket.com/product/516647-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-100%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                    <img src="image/روبوستا-100.jpg" alt="عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cove">
+                    <div class="p-4 text-right">
+                        <h4 class="font-bold text-amber-900">پودر قهوه 100 درصد روبوستا</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="powder" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h3 class="px-7 text-3xl font-bold text-amber-900 mb-8 text-right">پودر قهوه</h3>
+
+        <div  class="relative">
+            <div class="scroll-container overflow-x-auto horizontal-scroll flex gap-6 pb-4 px-1" style="scroll-behavior: smooth;">
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516642-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-20%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---80%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29 ">
+                        <img src="image/20-80%20-%20Copy.jpg" alt="قهوه عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cover"/>
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">پودر قهوه 20% عربیکا - 80% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516666-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-40-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---60-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/60-40.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">پودر قهوه 40% عربیکا - 60% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516646-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-70%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---30%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/70-30-2.jpg" alt="قهوه عربیکا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">پودر قهوه 70% عربیکا - 30% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516643-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-30%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---70%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/30-70.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">پودر قهوه 30% عربیکا - 70% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516645-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-60%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---40%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/60-40.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">پودر قهوه 60% عربیکا - 40% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="min-w-[280px] bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <a href="https://jaliket.com/product/516644-%D9%BE%D9%88%D8%AF%D8%B1-%D9%82%D9%87%D9%88%D9%87-50%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B9%D8%B1%D8%A8%DB%8C%DA%A9%D8%A7---50%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D9%88%D8%A8%D9%88%D8%B3%D8%AA%D8%A7-%28250-%DA%AF%D8%B1%D9%85%DB%8C%29">
+                        <img src="image/50-50.jpg" alt="قهوه روبوستا" class="p-3 rounded-[20px] w-full h-48 object-cover">
+                        <div class="p-4 text-right">
+                            <h4 class="font-bold text-amber-900">پودر قهوه 50% عربیکا - 50% روبوستا</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <button onclick="scrollCoffee('right')"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-amber-50 transition z-10">
+                <i class="ri-arrow-left-s-line text-2xl text-amber-700"></i>
+            </button>
+            <button onclick="scrollCoffee('left')"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-amber-50 transition z-10">
+                <i class="ri-arrow-right-s-line text-2xl text-amber-700"></i>
+            </button>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-amber-900 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right">
+            <div>
+                <h4 class="text-xl font-bold mb-3">قهوه وانیا</h4>
+                <p class="text-amber-200">طعم واقعی قهوه، در هر فنجان</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-3">ارتباط با ما</h4>
+                <p class="text-amber-200"><i class="ri-phone-fill ml-1"></i> 09199895458</p>
+                <p class="text-amber-200"><i class="ri-instagram-fill ml-1"></i> @vanyacoffee</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-3">آدرس</h4>
+                <p class="text-amber-200">دفتر : تهران ، جنت آباد جنوبی<br>
+                    کارخانه : تهران ، شهرک صنعتی صفادشت </p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
